@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>앵커(anchor) 만들고 부드럽게 스크롤해서 찾아가기(플러그인, CSS 속성)</title>
+    <link rel="stylesheet" href="css/style3.css">
+    <!-- <script src="script/jquery-3.4.1.min.js"></script>
+    <script src="script/jquery.scrollTo.min.js"></script> -->
+</head>
+<body>
+    
+    <!-- 
+        앵커:한페이지 안에서 지정된 위치로 점프하여 스크롤 하기
+        <a href="#앵커 이름"> 표시 텍스트 또는 이미지</a>
+        <태그 id="앵커 이름"></태그>
+    -->
+
+    <div class="container">
+        <header>
+            <a href="#part1">html part</a>
+            <a href="#part2">css part</a>
+            <a href="#part3">jquery part</a>
+            <a href="#part4">portfolio part</a>
+        </header>
+        
+        <h1 id="part1">html part</h1>
+        <hr>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam et labore, illum a nulla ea totam voluptate esse velit veritatis nesciunt sit? Esse, atque. Totam, reiciendis eum! Blanditiis quis excepturi iure cupiditate qui deleniti officiis impedit porro possimus fugiat explicabo omnis voluptates saepe magnam aut nihil repellendus vero non rem nam, vitae laborum doloribus. Nihil enim ipsum optio quam eaque mollitia similique dignissimos distinctio praesentium! Eius quae atque qui ratione non tenetur recusandae perferendis nesciunt dolore, laboriosam nulla, optio at. Laudantium quisquam placeat deserunt rem eligendi, delectus dolorum quia sint odit odio incidunt voluptas nulla neque nihil magni repudiandae enim reiciendis dolore iusto ipsam ducimus labore. Consequuntur officia natus maiores veniam ratione ab fuga voluptates vero? Pariatur minus reprehenderit dolorum impedit, rerum unde suscipit omnis dolorem provident, consequuntur quisquam inventore blanditiis ullam dignissimos quod est odio accusantium asperiores mollitia nihil sit, ea iste. Optio ut inventore quos. Illum maiores, velit quasi fuga ullam nam laborum a sunt molestiae officia. Sapiente explicabo corrupti adipisci minus ducimus porro, esse eligendi, provident accusamus et sint maiores officia, velit eaque vero. Harum, vel corrupti. Omnis aliquam nesciunt, optio, distinctio sit placeat, dolores ratione assumenda minima facere fugiat cumque sint dolore aliquid ipsa enim autem.
+        </p>
+        <a class="btn-gototop" href="#">Go to top</a>
+
+        <h1 id="part2">css part</h1>
+        <hr>
+        <p>
+            dolor sit amet consectetur adipisicing elit. Ullam et labore, illum a nulla ea totam voluptate esse velit veritatis nesciunt sit? Esse, atque. Totam, reiciendis eum! Blanditiis quis excepturi iure cupiditate qui deleniti officiis impedit porro possimus fugiat explicabo omnis voluptates saepe magnam aut nihil repellendus vero non rem nam, vitae laborum doloribus. Nihil enim ipsum optio quam eaque mollitia similique dignissimos distinctio praesentium! Eius quae atque qui ratione non tenetur recusandae perferendis nesciunt dolore, laboriosam nulla, optio at. Laudantium quisquam placeat deserunt rem eligendi, delectus dolorum quia sint odit odio incidunt voluptas nulla neque nihil magni repudiandae enim reiciendis dolore iusto ipsam ducimus labore. Consequuntur officia natus maiores veniam ratione ab fuga voluptates vero? Pariatur minus reprehenderit dolorum impedit, rerum unde suscipit omnis dolorem provident, consequuntur quisquam inventore blanditiis ullam dignissimos quod est odio accusantium asperiores mollitia nihil sit, ea iste. Optio ut inventore quos. Illum maiores, velit quasi fuga ullam nam laborum a sunt molestiae officia. Sapiente explicabo corrupti adipisci minus ducimus porro, esse eligendi, provident accusamus et sint maiores officia, velit eaque vero. Harum, vel corrupti. Omnis aliquam nesciunt, optio, distinctio sit placeat, dolores ratione assumenda minima facere fugiat cumque sint dolore aliquid ipsa enim autem.
+        </p>
+        <a class="btn-gototop" href="#">Go to top</a>
+
+        <h1 id="part3">jquery part</h1>
+        <hr>
+        <p>
+            amet consectetur adipisicing elit. Ullam et labore, illum a nulla ea totam voluptate esse velit veritatis nesciunt sit? Esse, atque. Totam, reiciendis eum! Blanditiis quis excepturi iure cupiditate qui deleniti officiis impedit porro possimus fugiat explicabo omnis voluptates saepe magnam aut nihil repellendus vero non rem nam, vitae laborum doloribus. Nihil enim ipsum optio quam eaque mollitia similique dignissimos distinctio praesentium! Eius quae atque qui ratione non tenetur recusandae perferendis nesciunt dolore, laboriosam nulla, optio at. Laudantium quisquam placeat deserunt rem eligendi, delectus dolorum quia sint odit odio incidunt voluptas nulla neque nihil magni repudiandae enim reiciendis dolore iusto ipsam ducimus labore. Consequuntur officia natus maiores veniam ratione ab fuga voluptates vero? Pariatur minus reprehenderit dolorum impedit, rerum unde suscipit omnis dolorem provident, consequuntur quisquam inventore blanditiis ullam dignissimos quod est odio accusantium asperiores mollitia nihil sit, ea iste. Optio ut inventore quos. Illum maiores, velit quasi fuga ullam nam laborum a sunt molestiae officia. Sapiente explicabo corrupti adipisci minus ducimus porro, esse eligendi, provident accusamus et sint maiores officia, velit eaque vero. Harum, vel corrupti. Omnis aliquam nesciunt, optio, distinctio sit placeat, dolores ratione assumenda minima facere fugiat cumque sint dolore aliquid ipsa enim autem.
+        </p>
+        <a class="btn-gototop" href="#">Go to top</a>
+
+        <h1 id="part4">portfolio part</h1>
+        <hr>
+        <p>
+            adipisicing elit. Ullam et labore, illum a nulla ea totam voluptate esse velit veritatis nesciunt sit? Esse, atque. Totam, reiciendis eum! Blanditiis quis excepturi iure cupiditate qui deleniti officiis impedit porro possimus fugiat explicabo omnis voluptates saepe magnam aut nihil repellendus vero non rem nam, vitae laborum doloribus. Nihil enim ipsum optio quam eaque mollitia similique dignissimos distinctio praesentium! Eius quae atque qui ratione non tenetur recusandae perferendis nesciunt dolore, laboriosam nulla, optio at. Laudantium quisquam placeat deserunt rem eligendi, delectus dolorum quia sint odit odio incidunt voluptas nulla neque nihil magni repudiandae enim reiciendis dolore iusto ipsam ducimus labore. Consequuntur officia natus maiores veniam ratione ab fuga voluptates vero? Pariatur minus reprehenderit dolorum impedit, rerum unde suscipit omnis dolorem provident, consequuntur quisquam inventore blanditiis ullam dignissimos quod est odio accusantium asperiores mollitia nihil sit, ea iste. Optio ut inventore quos. Illum maiores, velit quasi fuga ullam nam laborum a sunt molestiae officia. Sapiente explicabo corrupti adipisci minus ducimus porro, esse eligendi, provident accusamus et sint maiores officia, velit eaque vero. Harum, vel corrupti. Omnis aliquam nesciunt, optio, distinctio sit placeat, dolores ratione assumenda minima facere fugiat cumque sint dolore aliquid ipsa enim autem.
+        </p>
+        <a class="btn-gototop" href="#">Go to top</a>
+    <div>   
+
+    <!-- smooth scroll  -->
+    <script>
+        $('header a, .btn-gototop').click(function(e) {
+            $.scrollTo(this.hash || 0, 900);
+            e.prevenDefault();
+        });
+    </script>   
+</body>
+</html>
