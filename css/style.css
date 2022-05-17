@@ -1,0 +1,56 @@
+/* 1 */
+/* .parent {
+    border: 5px solid #000;
+    width: 1280px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.parent div {
+    border: 5px solid red;
+    height: 200px;
+    width: 300px;
+} */
+
+
+/* 2 */
+/* .card {
+    border: 1px solid #000;
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    border: 1px solid #000;
+    width: 70%;
+}
+.card h1 {
+    margin: 0;
+} */
+
+
+
+/* 3 */
+/* .parent {
+    border: 5px solid #000;
+    width: 800px;
+    display: flex;
+}
+.child1,
+.child2 {
+    border: 5px solid red;
+    height: 150px;
+    flex: 1;
+} */
+
+/* .child1 {
+    order: 2;
+}
+.child2 {
+    order: 1;
+} */

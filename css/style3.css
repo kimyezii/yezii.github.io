@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    /* IE에서는 사용할 수 없음 
+    모바일에서만 사용한다면 ㄱㅊ*/
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header a {
+    background-color: teal;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+p {
+    font-size: 1.5em;
+    line-height: 2em;
+}
+.btn-gototop {
+    background-color: pink;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
