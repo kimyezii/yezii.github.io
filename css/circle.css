@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    line-height: 1.6em;
+    color: #222;
+    /* flex & grid centering으로 중앙에 위치하기 */
+    /* display: flex; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* 높이값이 있어야 align-items가 적용됨 */
+    height: 100vh;
+}
+a {
+    text-decoration: none;
+    color: #222;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    margin: 0;
+}
+
+/* CSS keyframe Animation - circle loading */
+.loading {
+    /* border: 1px solid #000; */
+    width: 60px;
+    height: 60px;
+    /* position으로 중앙에 위치하기 */
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    position: relative;
+}
+.loading span {
+    font-size: 10px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.8);
+    font-weight: 500;
+    animation: loading 1s linear infinite;
+}
+.circle {
+    border: 5px solid #000;
+    width: inherit;
+    height: inherit;
+    /* inherit + boder(5px + 5px) > .loading width&height */
+    box-sizing: border-box;
+    border-radius: 50%;
+    border-right-color: lightgray;
+    border-left-color: lightgray;
+    animation: circle 1s linear infinite;
+    /* animation-direction: reverse; */
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes loading {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

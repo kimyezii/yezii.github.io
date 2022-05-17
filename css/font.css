@@ -1,0 +1,32 @@
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #222;
+}
+.frame i {
+    font-size: 10em;
+    color: #fff;
+    /* box-shadow: 0 0 30px crimson; */
+    text-shadow: 0 0 30px crimson, 
+    0 0 60px crimson,
+    0 0 90px crimson,
+    0 0 120px crimson;
+    animation: hue-rotate 3s linear infinite;
+}
+/* hue(색조, 색상)을 변경 */
+@keyframes hue-rotate {
+    0% {
+        filter: hue-rotate(0deg);
+        /* 이미지에 색조 회전을 적용 */
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+
+}
