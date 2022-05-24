@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Raleway:wght@200;300;700&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5em;
+    margin: 0;
+    font-weight: 300;
+    /* { 중앙배치 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* 중앙배치 } */
+    /* 가로배치하기 : 부모요소에 display: flex;
+       수평중앙 배치하기 : 부모요소에 justify-content: center;
+       수직중앙 배치하기 : 부모요소에 align-items: center; */
+
+}
+a {
+    text-decoration: none;
+}
+
+.loading span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: gray;
+    border-radius: 50%;
+    animation: loading 1s linear infinite;
+    /*                      ㄴ일정속도 ㄴ반복*/
+}
+.loading span:nth-child(1) {
+    animation-delay: 0s;
+    background-color: darkslateblue;
+}
+.loading span:nth-child(2) {
+    animation-delay: 0.2s;
+    background-color:rgb(136, 74, 218);
+}
+.loading span:nth-child(3) {
+    animation-delay: 0.4s;
+    background-color:rgb(191, 181, 253);
+}
+
+@keyframes loading {
+    0% {
+        opacity: 0;
+        transform: scale(0.5); 
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    /* scale = 확대 또는 축소 */
+    /* 0%, 100% {
+        opacity: 0;
+        transform: scale(0.5);
+    } */
+}
+
+
+
+
+/* 부모 {
+    height: 50px;
+}
+자식 {
+    height: 100%;
+} */
+
+
+/* body {
+    height: 100vh;
+} */
