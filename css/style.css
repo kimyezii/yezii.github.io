@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.gnb {}
+.gnb a {
+    position: relative;
+    padding-bottom: 5px;
+}
+/* 왼쪽시작 */
+.gnb a:nth-of-type(1):before {
+    /*before와after는 inline요소 ->크기값 가질수없음 */
+    content: '';
+    position: absolute;
+    /*absolute를 주면 inline-block요소로 바뀜. ->크기값o  */
+    background-color: crimson;
+    height: 1px;
+    bottom: 0;
+    width: 0; /* 안보이게 */
+    transition: 0.3s;
+    right: 0;
+    /* ㄴ오른쪽 시작 */
+}
+.gnb a:nth-of-type(1):hover:before {
+    width: 100%;
+}
+
+/* 왼쪽부터 이동 */
+.gnb a:nth-of-type(2):before {
+    content: '';
+    position: absolute;
+    background-color: crimson;
+    height: 4px;
+    width: 4px;
+    bottom: 0;
+    transition: 0.3s;
+    left: 0;
+}
+.gnb a:nth-of-type(2):hover:before {
+    /* left: 100%; */
+    left: calc(100% - 4px);
+    /* 자신의 크기를 빼주면 안쪽까지 이동함 */
+}
+/* 중앙부터 펼쳐지게 */
+.gnb a:nth-of-type(3):before {
+    content: '';
+    position: absolute;
+    background-color: crimson;
+    height: 1px;
+    width: 0px;
+    bottom: 0;
+    transition: 0.3s;
+    left: 50%; /* 중앙배치 */
+    transform: translateX(-50%);
+    /* 자기자신의 크기에서 -50%뺌  */
+}
+.gnb a:nth-of-type(3):hover:before {
+    width: 100%;
+}
+/* 보여진 상태에서 중앙으로 보이게 */
+.gnb a:nth-of-type(4):before {
+    content: '';
+    position: absolute;
+    background-color: crimson;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    transition: 0.3s;
+    left: 50%; /* 중앙배치 */
+    transform: translateX(-50%);
+    /* 자기자신의 크기에서 -50%뺌  */
+}
+.gnb a:nth-of-type(4):hover:before {
+    width: 0;
+}
