@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>a태그 앵커 만들고 2가지 방식으로 Smooth Scrolling 하기(제이쿼리 플러그인, CSS 속성)</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <script src="./script/jquery-3.4.1.min.js"></script> 
+    <script src="./script/jquery.scrollTo.min.js"></script> -->
+    <!-- js오픈소스가 scrollTo보다 위에 있어야함.  -->
+</head>
+<body>
+    <div class="contaoner">
+        <header>
+            <!-- id이름 앞에 # 넣기 -->
+            <a href="#part1">html part</a>
+            <a href="#part2">css part</a>
+            <a href="#part3">jquery part</a>
+            <a href="#part4">portfolio part</a>
+        </header>
+        <h1 id="part1">html part</h1>
+        <hr>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis deleniti, facere voluptas, id porro dolorum officia aut iure molestias ex nisi dolore ratione minima natus recusandae deserunt optio nostrum tenetur. Beatae amet pariatur vel iste tempore maxime officiis? Enim sunt exercitationem maxime veniam, saepe ipsum, odit fugiat accusantium autem dolore, incidunt ipsa possimus beatae similique et illum esse sapiente voluptatum ratione. Accusamus asperiores tempora necessitatibus error, iure recusandae temporibus debitis nulla dolores omnis reprehenderit quia unde praesentium rem maxime modi a ipsa fugit ratione dolorem? Nisi sint, consequuntur harum in quibusdam nihil reprehenderit facere odio hic unde? Harum sit iste architecto amet ea doloribus eius voluptate alias. Itaque aperiam iusto reiciendis facere vero perferendis, culpa laboriosam modi consequuntur voluptatem voluptatibus velit tempore totam similique repudiandae magnam at. Voluptates non, enim eveniet incidunt deleniti illo eligendi odit ad, aperiam tempore iste porro officia quam quas excepturi error ex delectus, placeat optio perspiciatis? Explicabo doloremque quia, error recusandae enim omnis quis culpa iure expedita iusto sapiente maxime suscipit eaque iste eius sequi ullam atque corrupti deserunt sunt. Sequi tempore eaque beatae eum soluta excepturi, id nihil qui impedit at assumenda repellat, debitis ea? Eligendi aspernatur cum, dignissimos iusto doloribus qui nostrum eos.
+        </p>
+        <a class="btn-gototop" href="#">Go to top</a>
+        <!-- href="#" 최상단으로. -->
+        <h1 id="part2">css part</h1>
+        <hr>
+        <p>
+            ipsum, dolor sit amet consectetur adipisicing elit. Perferendis deleniti, facere voluptas, id porro dolorum officia aut iure molestias ex nisi dolore ratione minima natus recusandae deserunt optio nostrum tenetur. Beatae amet pariatur vel iste tempore maxime officiis? Enim sunt exercitationem maxime veniam, saepe ipsum, odit fugiat accusantium autem dolore, incidunt ipsa possimus beatae similique et illum esse sapiente voluptatum ratione. Accusamus asperiores tempora necessitatibus error, iure recusandae temporibus debitis nulla dolores omnis reprehenderit quia unde praesentium rem maxime modi a ipsa fugit ratione dolorem? Nisi sint, consequuntur harum in quibusdam nihil reprehenderit facere odio hic unde? Harum sit iste architecto amet ea doloribus eius voluptate alias. Itaque aperiam iusto reiciendis facere vero perferendis, culpa laboriosam modi consequuntur voluptatem voluptatibus velit tempore totam similique repudiandae magnam at. Voluptates non, enim eveniet incidunt deleniti illo eligendi odit ad, aperiam tempore iste porro officia quam quas excepturi error ex delectus, placeat optio perspiciatis? Explicabo doloremque quia, error recusandae enim omnis quis culpa iure expedita iusto sapiente maxime suscipit eaque iste eius sequi ullam atque corrupti deserunt sunt. Sequi tempore eaque beatae eum soluta excepturi, id nihil qui impedit at assumenda repellat, debitis ea? Eligendi aspernatur cum, dignissimos iusto doloribus qui nostrum eos.
+        </p>
+        <a class="btn-gototop" href="#">Go to top</a>
+        <h1 id="part3">jquery part</h1>
+        <hr>
+        <p>
+            dolor sit amet consectetur adipisicing elit. Perferendis deleniti, facere voluptas, id porro dolorum officia aut iure molestias ex nisi dolore ratione minima natus recusandae deserunt optio nostrum tenetur. Beatae amet pariatur vel iste tempore maxime officiis? Enim sunt exercitationem maxime veniam, saepe ipsum, odit fugiat accusantium autem dolore, incidunt ipsa possimus beatae similique et illum esse sapiente voluptatum ratione. Accusamus asperiores tempora necessitatibus error, iure recusandae temporibus debitis nulla dolores omnis reprehenderit quia unde praesentium rem maxime modi a ipsa fugit ratione dolorem? Nisi sint, consequuntur harum in quibusdam nihil reprehenderit facere odio hic unde? Harum sit iste architecto amet ea doloribus eius voluptate alias. Itaque aperiam iusto reiciendis facere vero perferendis, culpa laboriosam modi consequuntur voluptatem voluptatibus velit tempore totam similique repudiandae magnam at. Voluptates non, enim eveniet incidunt deleniti illo eligendi odit ad, aperiam tempore iste porro officia quam quas excepturi error ex delectus, placeat optio perspiciatis? Explicabo doloremque quia, error recusandae enim omnis quis culpa iure expedita iusto sapiente maxime suscipit eaque iste eius sequi ullam atque corrupti deserunt sunt. Sequi tempore eaque beatae eum soluta excepturi, id nihil qui impedit at assumenda repellat, debitis ea? Eligendi aspernatur cum, dignissimos iusto doloribus qui nostrum eos.
+        </p>
+        <a class="btn-gototop" href="#">Go to top</a>
+        <h1 id="part4">portfolio part</h1>
+        <hr>
+        <p>
+            sit amet consectetur adipisicing elit. Perferendis deleniti, facere voluptas, id porro dolorum officia aut iure molestias ex nisi dolore ratione minima natus recusandae deserunt optio nostrum tenetur. Beatae amet pariatur vel iste tempore maxime officiis? Enim sunt exercitationem maxime veniam, saepe ipsum, odit fugiat accusantium autem dolore, incidunt ipsa possimus beatae similique et illum esse sapiente voluptatum ratione. Accusamus asperiores tempora necessitatibus error, iure recusandae temporibus debitis nulla dolores omnis reprehenderit quia unde praesentium rem maxime modi a ipsa fugit ratione dolorem? Nisi sint, consequuntur harum in quibusdam nihil reprehenderit facere odio hic unde? Harum sit iste architecto amet ea doloribus eius voluptate alias. Itaque aperiam iusto reiciendis facere vero perferendis, culpa laboriosam modi consequuntur voluptatem voluptatibus velit tempore totam similique repudiandae magnam at. Voluptates non, enim eveniet incidunt deleniti illo eligendi odit ad, aperiam tempore iste porro officia quam quas excepturi error ex delectus, placeat optio perspiciatis? Explicabo doloremque quia, error recusandae enim omnis quis culpa iure expedita iusto sapiente maxime suscipit eaque iste eius sequi ullam atque corrupti deserunt sunt. Sequi tempore eaque beatae eum soluta excepturi, id nihil qui impedit at assumenda repellat, debitis ea? Eligendi aspernatur cum, dignissimos iusto doloribus qui nostrum eos.
+        </p>
+        <a class="btn-gototop" href="#">Go to top</a>
+    </div>
+
+    <!-- Smooth scroll -->
+    <!-- <script>
+        $('header a, .btn-gototop').click(function(){
+            $.scrollTo(this.hash || 0, 900)
+            //                          ㄴ0.9초 스크롤링 속도
+            e.preventDefault();
+        })
+    </script> -->
+    <!-- Smooth scroll -->
+</body>
+</html>
