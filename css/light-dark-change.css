@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url(../images/svg-background.svg);
+    color: #333;
+    font-size: 15px;
+    line-height: 1.6em;
+    margin: 0;
+    height: 100vh;
+    /* .frame에 absolute를 주어서 바디높이값이 없어짐. 그래서 높이값을 주어야함(자식요소가 붕 떠서 자식이 없다고 생각하기 때문.) */
+}
+a {
+    text-decoration: none;
+}
+
+/* Profile Card Dark Mode */
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* border: 1px solid #000; */
+    width: 100%;
+    text-align: center;
+}
+.profile {
+    /* border: 1px solid #000; */
+    width: 320px;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    transition: 0.5s;
+}
+.face img {
+    width: 120px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+
+.face {
+    /* border: 1px solid #000; */
+    width: 120px;
+    height: 120px;
+    /* margin: auto; */
+    display: inline-block;
+    position: relative;
+}
+.face i {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 20px;
+    background-color: deepskyblue;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.profile h1 {
+    font-size: 26px;
+    font-weight: normal;
+    line-height: 1.2em;
+    margin-bottom: 0;
+}
+.profile h1 span {
+    display: block;
+    font-size: 13px;
+    color: #bbb;
+    text-transform: uppercase;
+    /* margin-top: 10px; */
+}
+.profile p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.profile p span {
+    display: block;
+    color: royalblue;
+}
+
+.view-portfolio {
+    background-color: #00cec9;
+    color: #fff;
+    padding: 5px;
+    border-radius: 30px;
+    text-transform: capitalize;
+    display: inline-block;
+    width: 180px;
+}
+
+/* SNS */
+.sns {
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+.sns div {
+    /* border: 1px solid #000; */
+    display: inline-block;
+    width: 30%;
+}
+.sns div i {
+    /* background-color: red; */
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    font-size: 2.5em;
+    line-height: 70px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.sns div span {
+    font-size: 13px;
+    color: #bbb;
+}
+.sns div span big {
+    display: block;
+    color: #333;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.sns div:nth-child(1) i {
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+.sns div:nth-child(2) i {
+    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+}
+.sns div:nth-child(3) i {
+    background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+}
+
+/* Top Buttons */
+.btn-mode,
+.like-more {
+    font-size: 18px;
+}
+.btn-mode {
+    /* border: 1px solid #000; */
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+.btn-mode::before {
+    content: '\eb0f';
+    font-family: xeicon;
+}
+.like-more {
+    /* border: 1px solid #000; */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.btn-like {
+    /* border: 1px solid #000; */
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+.btn-like::before {
+    content: '\ea11';
+    font-family: xeicon;
+}
+.btn-like.active::before {
+    content: '\ea10';
+}
+.btn-more {
+    cursor: pointer;
+}
+
+/* Dark Mode CSS */
+.profile.dark {
+    background-color: #323650;
+}
+
+.profile.dark .btn-mode,
+.profile.dark .like-more {
+    color: #fff;
+}
+.profile.dark h1 {
+    color: #fff;
+}
+.profile.dark p {
+    color: #fff;
+}
+.profile.dark .sns {
+    border-top: 1px solid #555;
+}
+.profile.dark .sns div span big {
+    color: #fff;
+}
+.profile.dark .btn-mode::before {
+    content: '\eba3';
+    font-family: xeicon;
+}
