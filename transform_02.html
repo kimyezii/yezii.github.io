@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>풀스크린 네비게이션 반응형 포트폴리오 with jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="css/transform_02.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div class="toggle">
+        <i class="xi-plus-thin"></i>
+    </div>
+    <div class="overlay"></div>
+
+    <ul class="gnb">
+        <li><a href="#feature1">Home</a></li>
+        <li><a href="#feature2">About</a></li>
+        <li><a href="#feature3">Graphic Portfolio</a></li>
+        <li><a href="#feature4">Web Portfolio</a></li>
+        <li><a href="#feature5">Contact</a></li>
+        <li><a href="#feature6">Epilogue</a></li>
+    </ul>
+
+    <div class="container">
+        <section class="welcome" id="feature1">
+            <img src="./images/bg-welcome.jpg">
+        </section>
+        <section id="feature2">
+            <div class="inner">
+                <div class="heading">
+                    <b>Lorem ipsum dolor sit amet</b>
+                    <h1>Section : About</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus doloribus inventore omnis hic sit rem esse ipsa itaque quis fugiat nemo unde quaerat debitis fuga, nisi, saepe iste, voluptatum ducimus. Totam qui ipsum perspiciatis explicabo dolorem ab, sint soluta error doloremque culpa sapiente eaque ipsa reiciendis aspernatur alias magni veniam laborum distinctio ut. Reprehenderit minima, non quidem, qui in minus cumque beatae ab modi voluptatum repudiandae autem quibusdam harum tenetur ad temporibus dignissimos! Repellat officiis est ea! Aliquid a laudantium recusandae iste, earum natus quos illo eius corporis voluptates? Vitae velit enim temporibus nostrum incidunt adipisci in debitis, nesciunt quasi.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="feature3"> 
+            <div class="inner">
+                <div class="heading">
+                    <b>Lorem ipsum dolor sit amet</b>
+                    <h1>Section : Graphic Portfolio</h1>
+                    <p>
+                        ipsum dolor sit amet consectetur adipisicing elit. Accusamus doloribus inventore omnis hic sit rem esse ipsa itaque quis fugiat nemo unde quaerat debitis fuga, nisi, saepe iste, voluptatum ducimus. Totam qui ipsum perspiciatis explicabo dolorem ab, sint soluta error doloremque culpa sapiente eaque ipsa reiciendis aspernatur alias magni veniam laborum distinctio ut. Reprehenderit minima, non quidem, qui in minus cumque beatae ab modi voluptatum repudiandae autem quibusdam harum tenetur ad temporibus dignissimos! Repellat officiis est ea! Aliquid a laudantium recusandae iste, earum natus quos illo eius corporis voluptates? Vitae velit enim temporibus nostrum incidunt adipisci in debitis, nesciunt quasi.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="feature4">
+            <div class="inner">
+                <div class="heading">
+                    <b>Lorem ipsum dolor sit amet</b>
+                    <h1>Section : Web Portfolio</h1>
+                    <p>
+                        dolor sit amet consectetur adipisicing elit. Accusamus doloribus inventore omnis hic sit rem esse ipsa itaque quis fugiat nemo unde quaerat debitis fuga, nisi, saepe iste, voluptatum ducimus. Totam qui ipsum perspiciatis explicabo dolorem ab, sint soluta error doloremque culpa sapiente eaque ipsa reiciendis aspernatur alias magni veniam laborum distinctio ut. Reprehenderit minima, non quidem, qui in minus cumque beatae ab modi voluptatum repudiandae autem quibusdam harum tenetur ad temporibus dignissimos! Repellat officiis est ea! Aliquid a laudantium recusandae iste, earum natus quos illo eius corporis voluptates? Vitae velit enim temporibus nostrum incidunt adipisci in debitis, nesciunt quasi.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="feature5">
+            <div class="inner">
+                <div class="heading">
+                    <b>Lorem ipsum dolor sit amet</b>
+                    <h1>Section : Contact</h1>
+                    <p>
+                        sit amet consectetur adipisicing elit. Accusamus doloribus inventore omnis hic sit rem esse ipsa itaque quis fugiat nemo unde quaerat debitis fuga, nisi, saepe iste, voluptatum ducimus. Totam qui ipsum perspiciatis explicabo dolorem ab, sint soluta error doloremque culpa sapiente eaque ipsa reiciendis aspernatur alias magni veniam laborum distinctio ut. Reprehenderit minima, non quidem, qui in minus cumque beatae ab modi voluptatum repudiandae autem quibusdam harum tenetur ad temporibus dignissimos! Repellat officiis est ea! Aliquid a laudantium recusandae iste, earum natus quos illo eius corporis voluptates? Vitae velit enim temporibus nostrum incidunt adipisci in debitis, nesciunt quasi.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="feature6">
+            <div class="inner">
+                <div class="heading">
+                    <b>Lorem ipsum dolor sit amet</b>
+                    <h1>Section : Epilogue</h1>
+                    <p>
+                         consectetur adipisicing elit. Accusamus doloribus inventore omnis hic sit rem esse ipsa itaque quis fugiat nemo unde quaerat debitis fuga, nisi, saepe iste, voluptatum ducimus. Totam qui ipsum perspiciatis explicabo dolorem ab, sint soluta error doloremque culpa sapiente eaque ipsa reiciendis aspernatur alias magni veniam laborum distinctio ut. Reprehenderit minima, non quidem, qui in minus cumque beatae ab modi voluptatum repudiandae autem quibusdam harum tenetur ad temporibus dignissimos! Repellat officiis est ea! Aliquid a laudantium recusandae iste, earum natus quos illo eius corporis voluptates? Vitae velit enim temporibus nostrum incidunt adipisci in debitis, nesciunt quasi.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script>
+        $('.toggle').click(function(){
+            $('.toggle, .overlay, .gnb').toggleClass('active')
+        })
+        $('.gnb a').click(function(){
+            $('.toggle, .overlay, .gnb').removeClass('active')
+        })
+    </script>
+</body>
+
+<!-- 
+    ■ 제작노트(HTML+CSS+JS 실전 퍼블리싱 예제)
+
+    1) HTML 구조만들기(Welcome Section, Toggle Trigger)
+    2) CSS 크기조정,배치하기,상세 디자인
+    3) HTML 구조만들기(All Section & Section Content)
+    4) CSS 크기조정,배치하기,상세 디자인
+    5) 앵커(Anchor) 만들기
+    6) 네비게이션 클릭 후 슬라이딩 되면서 active 클래스 추가(gnb, toggle, body)
+ -->
+</html>
