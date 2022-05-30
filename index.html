@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Academy 헤더 드롭다운 네비게이션</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="banner-outer">
+                <div class="banner">
+                    <span class="close-banner"><i class="xi-close-thin"></i></span>
+                    <img src="./images/banner.png">
+                </div>
+            </div>
+            <div class="lnb-outer">
+                <div class="lnb">
+                    <div class="logo">
+                        <a href="#"><img src="./images/logo.png"></a>
+                    </div>
+                    <div class="lnb-navi">
+                        <a href="#">Login</a>
+                        <a href="#">Register Membership</a>
+                        <a href="#">Education Gift</a>
+                        <a href="#">Voucher Learning Mail</a>
+                        <a href="#">Customer enter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gnb-outer">
+                <nav>
+                    <ul class="gnb">
+                        <li>
+                            <a href="#">Take a lecture</a>
+                        </li>
+                        <li>
+                            <a href="#">Infinite refund course</a>
+                            <div class="dropdown">
+                                <a href="#">TOEIC refund Course</a>
+                                <a href="#">Infinite pass</a>
+                                <a href="#">TOEIC speaking Pass</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Instructor introduction</a>
+                        </li>
+                        <li>
+                            <a href="#">Free lecture</a>
+                            <div class="dropdown">
+                                <a href="#">TOEIC refund Course</a>
+                                <a href="#">TOEIC</a>
+                                <a href="#">Free special TOEIC lecture</a>
+                                <a href="#">TOEIC 5 minutes in practice</a>
+                                <a href="#">Pronunciation travel</a>
+                                <a href="#">Daily TOEIC VOCA</a>
+                                <a href="#">Speaking practice</a>
+                                <a href="#">Writing practice</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Event <em class="badge">13</em></a>
+                            <div class="dropdown">
+                                <a href="#">Event in progress</a>
+                                <a href="#">End event</a>
+                                <a href="#">Wouter Announcement</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Class room</a>
+                            <div class="dropdown">
+                                <a href="#">Lecture while taking</a>
+                                <a href="#">Questions / Reviews</a>
+                                <a href="#">Coupon</a>
+                                <a href="#">Course voucher</a>
+                                <a href="#">Payment / Shipping</a>
+                                <a href="#">Level test</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="trigger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </li>
+                    </ul>
+					<div class="sitemap-outer">
+						<div class="sitemap">
+							<div>
+								<b>Guided Lessons</b>
+								<a href="#">Progress Tracker</a>
+								<a href="#">Classroom Mode</a>
+								<a href="#">Skills Progression</a>
+							</div>
+							<div>
+								<b>Learning Library</b>
+								<a href="#none">Worksheets</a>
+								<a href="#none">Games</a>
+								<a href="#none">Workbooks</a>
+								<a href="#none">Activities</a>
+								<a href="#none">Songs</a>
+								<a href="#none">Stories</a>
+								<a href="#none">Exercises</a>
+							  </div>
+							  <div>
+								<b>Teaching Tools</b>
+								<a href="#none">Lesson Plans</a>
+								<a href="#none">Worksheet Generator</a>
+								<a href="#none">Common Core Resources</a>
+								<a href="#none">More Teaching Tools</a>
+							  </div>
+							  <div>
+								<b>Schools</b>
+								<a href="#none">Get a Quote</a>
+								<a href="#none">Buy School License</a>
+							  </div>
+							  <div>
+								<b>Support</b>
+								<a href="#none">Pricing</a>
+								<a href="#none">Give Gift</a>
+								<a href="#none">Redeem Gift</a>
+								<a href="#none">Schools</a>
+								<a href="#none">FAQs</a>
+								<a href="#none">Tell us what you think</a>
+								<a href="#none">Terms of Service</a>
+							  </div>
+							  <div>
+								<b>About Us</b>
+								<a href="#none">Company</a>
+								<a href="#none">Reviews</a>
+								<a href="#none">Blog</a>
+								<a href="#none">Press</a>
+								<a href="#none">Site Map</a>
+								<a href="#none">Contact Us</a>
+							  </div>
+						</div>
+					</div>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <img src="./images/section-bg.png">
+        </section>
+		<section>
+			<h1>Next Section</h1>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quod, itaque ut tenetur beatae incidunt quaerat quidem tempora necessitatibus aut voluptate reiciendis id asperiores nihil minus. Quo reprehenderit corporis vel.
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quod, itaque ut tenetur beatae incidunt quaerat quidem tempora necessitatibus aut voluptate reiciendis id asperiores nihil minus. Quo reprehenderit corporis vel.
+			</p>
+		</section>
+    </div>
+
+	<script>
+		$('.close-banner').click(function(){
+			// $('.banner-outer').hide()
+			// $('.banner-outer').fadeOut()
+			$('.banner-outer').slideUp()
+		})
+		$('.trigger').click(function(){
+			$(this).toggleClass('active')
+			$('.gnb li:last-child').toggleClass('active')
+			// $('.sitemap-outer').toggle()
+			// $('.sitemap-outer').slideToggle()
+			$('.sitemap-outer').fadeToggle()
+		})
+	</script>
+</body>
+
+<!-- 
+    ■ 제작노트(HTML+CSS+JS 실전 퍼블리싱 예제)
+
+    1) HTML 구조만들기(wireframe 설계)
+    2) HTML 내용 입력
+    3) CSS 배치 크기
+    4) CSS 상세 디자인
+ -->
+</html>
