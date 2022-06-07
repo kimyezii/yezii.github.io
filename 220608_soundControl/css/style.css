@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0px;
+    line-height: 1.6em;
+    color: #222;
+    font-size: 18px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    background-color: #222;
+}
+a {
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    margin: 0;
+}
+
+
+
+/* JavaScript & jQuery sound control*/
+.buttons {
+    margin-top: 30px;
+}
+.buttons button {
+    width: 130px;
+    border: none;
+    height: 50px;
+    font-size: 18px;
+    background-color: cornflowerblue;
+    color: #fff;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.audio-status {
+    /* border: 1px solid #fff; */
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.audio-status span {
+    float: left;
+    width: 2px;
+    height: 100%;
+    background-color: yellowgreen;
+    margin-right: 2px;
+}
+.audio-status.active span:nth-child(1) {
+    animation-delay: 0s;
+}
+.audio-status.active span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.audio-status.active span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.audio-status.active span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.audio-status.active span {
+    animation: audio-bar 1s linear infinite;
+}
+
+@keyframes audio-bar {
+    0% {
+        height: 0;
+    }
+    50% {
+        height: 100%;
+    }
+    100% {
+        height: 20%;
+    }
+}

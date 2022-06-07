@@ -1,0 +1,272 @@
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    line-height: 1.6em;
+    font-size: 26px;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* Header */
+header {
+    overflow: hidden;
+    padding: 35px 55px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+.logo {
+    float: left;
+}
+.logo img {
+    width: 170px;
+}
+.signin {
+    float: right;
+}
+.signin button {
+    background-color: crimson;
+    border: none;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+/* Common CSS  */
+section {
+    border-bottom: 10px solid #333;
+    position: relative;
+}
+
+
+
+/* section : welcome */
+.welcome {
+    height: 80vh;
+    background: url(../images/welcome-background.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.welcome::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+/* heading */
+.heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 800px;
+}
+.heading h1 {
+    font-size: 64px;
+    line-height: 1.2em;
+    margin: 0;
+}
+.heading h5 {
+    font-weight: normal;
+    margin: 0;
+    font-size: 20px;
+}
+.getstarted {
+    position: relative;
+    /* border: 1px solid red; */
+    display: inline-block;
+}
+.getstarted input[type=email],
+.getstarted button {
+    height: 60px;
+    outline: none;
+    border: none;
+    vertical-align: middle;
+}
+.getstarted input[type=email] {
+    width: 450px;
+    margin-right: -7px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.getstarted input[type=email] + span {
+    color: #999;
+    font-size: 16px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    transition: 0.35s;
+    pointer-events: none;
+}
+.getstarted input[type=email]:focus + span {
+    font-weight: bold;
+    transform: translateY(-18px);
+}
+.getstarted button {
+    width: 220px;
+    background-color: crimson;
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+
+
+/* section : Enjoy, Download, Watch, Create */
+.enjoy, .download, .watch, .create {
+    height: 500px;
+}
+.inner {
+    width: 1150px;
+    margin: auto;
+    /* border: 1px solid #fff; */
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.desc,
+.preview {
+    float: left;
+}
+.desc {
+    padding-top: 40px;
+    width: 60%;
+}
+.desc h2 {
+    font-size: 50px;
+    line-height: 1.2em;
+}
+.preview {
+    text-align: center;
+    width: 40%;
+}
+.preview img {
+    height: 350px;
+}
+
+
+/* section : FAQ */
+.faq {
+    padding: 80px 0;
+}
+.faq-inner {
+    width: 850px;
+    margin: auto;
+}
+.faq-inner h1 {
+    text-align: center;
+    font-size: 50px;
+}
+input[name=faq-item] {
+    display: none;
+}
+input[name=faq-item] + label {
+    display: block;
+    background-color: #303030;
+    padding: 15px;
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+.faq-content {
+    background-color: #303030;
+    padding: 0px;
+    margin-bottom: 10px;
+    /* display: none; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+input[name=faq-item] + label span {
+    float: right;
+    font-size: 36px;
+    transition: 0.35s;
+}
+aside {
+    text-align: center;
+}
+aside p {
+    font-size: 24px;
+}
+
+/* checked Function */
+input[name=faq-item]:checked + label + .faq-content {
+    /* display: block; */
+    max-height: 500px;
+    padding: 15px;
+}
+input[name=faq-item]:checked + label span {
+    transform: rotate(45deg);
+}
+
+/* Footer */
+footer {
+    padding: 50px 0;
+    font-size: 12px;
+    color: #777;
+    line-height: 1.5em;
+}
+.footer-inner {
+    /* border: 1px solid #fff; */
+    width: 850px;
+    margin: auto;
+}
+.sitemap {
+    border-bottom: 1px solid #222;
+    padding-bottom: 20px;
+}
+.sitemap h6 {
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+.links {
+    /* overflow: hidden; */
+}
+.items {
+    /* border: 1px solid #fff; */
+    /* float: left;
+    width: 25%; */
+    display: inline-block;
+    width: 24%;
+    vertical-align: top;
+    /* inline-block은 밑을 기준으로 정렬하기 때문에 top으로 맞추면 됨 */
+    line-height: 2em;
+}
+.items a {
+    color: #777;
+    display: block;
+}
+.items a:hover {
+    text-decoration: underline;
+}
+.copyright {
+    /* clear: both; */
+}
+.copyright p {}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript & jQuery - 사운드 재생 제어하기</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>자바스크립트 사운드 재생 제어하기</h1>
+    <div class="buttons">
+        <button id="btn-play-pause" onclick="playPause()">Play <i class="fa fa-play"></i></button>
+        <button onclick="stop()">Stop <i class="fa fa-stop"></i></button>
+    </div>
+
+    <audio id="audio" src="./images/mountain-sky-bgm.mp3"></audio>
+
+    <div class="audio-status">
+        <span style="height: 30%"></span>
+        <span style="height: 100%"></span>
+        <span style="height: 70%"></span>
+        <span style="height: 40%"></span>
+    </div>
+
+    <script>
+        var audio = document.getElementById('audio'),
+            btnPlayPause = document.getElementById('btn-play-pause'),
+            audioStatus = document.querySelector('.audio-status');
+            checkStatus = 0;
+        
+        function playPause() {
+            if(checkStatus == 0) {
+                checkStatus = 1;
+                audio.play();
+                btnPlayPause.innerHTML = 'Pause <i class="fa fa-pause"></i>';
+                audioStatus.classList.add('active');
+            }
+            else {
+                checkStatus = 0;
+                audio.pause();
+                btnPlayPause.innerHTML = 'play <i class="fa fa-play"></i>';
+                audioStatus.classList.remove('active');
+            }
+            console.log(checkStatus);
+        }
+            // = toggle
+
+        function stop() {
+            playPause();
+            audio.pause();
+            audio.currentTime = 0;
+            btnPlayPause.innerHTML = 'play <i class="fa fa-play"></i>'
+            audioStatus.classList.remove('active');
+        }
+    </script>
+</body>
+</html>
