@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>실전 반응형 웹사이트 - 크롬 브라우저 다운로드</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="icon" href="./images/chrome-logo.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="index.html" title="Chrome 다운로드"></a><img src="./images/logo.png">
+            </div>
+            <div class="download">
+                <a href="#" class="btn-download">Chrome 다운로드</a>
+            </div>
+        </header>
+        <section class="welcome">
+            <div class="heading">
+                <img src="./images/chrome-logo.svg">
+                <h1>새로워진 Chrome을 더욱 다양하게 활용하세요</h1>
+                <p>
+                    Google의 스마트한 기능을 내장하여 더욱 심플하고 안전하고 빨라졌습니다.
+                </p>
+                <div class="download-content">
+                    <a href="#" class="btn-download">Chrome 다운로드</a>
+                    <span>Windows 10/8.1/8/7 64비트용</span>
+                </div>
+                <div class="statics">
+                    <p>
+                        <label><input type="checkbox">사용 통계 및 비정상 종료 보고서를 Google에 자동으로 전송하여 Chrome 개선에 참여합니다.</label>
+                        <a href="#">자세히 알아보기</a>
+                    </p>
+                    <p>
+                        Chrome을 다운로드하면
+                        <a href="#">Google 서비스 약관</a>과
+                        <a href="#">Chrome 및 Chrome OS 추가 서비스 약관</a>에 동의하는 것으로 간주됩니다.
+                    </p>
+                </div>
+            </div>
+            <div class="next-section">
+                <a href="#next"><i class="xi-angle-down-min"></i></a>
+            </div>
+        </section>
+        <section class="feature solution" id="next">
+            <div class="inner">
+                <div class="desc">
+                    <img src="./images/feature-icon-01.png">
+                    <h1>어떤 일이든 더 빠르게 해내는 방법</h1>
+                    <p>
+                        크든 작든, 일이든 놀이든, 웹을 이용할 때는 목적이 있을 것입니다. Chrome은 업무 처리나 창의적 작업, 인터넷 탐색에 필요한 스마트한 기능과 빠른 속도를 제공합니다.
+                    </p>
+                    <a href="#" class="read-more">살펴보기</a>
+                </div>
+                <div class="photo">
+                    <img src="./images/save_password_global_desktop.png">
+                </div>
+            </div>
+        </section>
+        <section class="feature smart">
+            <div class="inner">
+                <div class="photo">
+                    <img src="./images/translate_global_desktop.png">
+                </div>
+                <div class="desc">
+                    <img src="./images/feature-icon-02.png">
+                    <h1>원하는 기능을 모두 갖춘 Google의 스마트함</h1>
+                    <p>
+                        Chrome은 웹을 최대한 활용하는 데 필요한 모든 기능을 제공합니다. 주소 표시줄에 답이 표시되고, 클릭 한 번으로 콘텐츠를 번역하고, 스마트폰에서 내게 맞는 읽을거리를 추천합니다.
+                    </p>
+                    <a href="#" class="read-more">살펴보기</a>
+                </div>
+            </div>
+        </section>
+        <section class="feature secure">
+            <div class="inner">
+                <div class="desc">
+                    <img src="./images/feature-icon-03.png">
+                    <h1>마치 초능력 같은 Chrome 보안 기능</h1>
+                    <p>
+                        웹에서는 어떤 문제든 발생할 수 있지만 일일이 아실 필요는 없습니다. Chrome이 피싱이나 위험한 사이트 같은 보안 문제로부터 자동으로 보호해 드립니다..
+                    </p>
+                    <a href="#" class="read-more">살펴보기</a>
+                </div>
+                <div class="photo">
+                    <img src="./images/chrome_global_desktop.png">
+                </div>
+            </div>
+        </section>
+        <section class="feature edit">
+            <div class="inner">
+                <div class="photo">
+                    <img src="./images/connected_global_desktop.png">
+                </div>
+                <div class="desc">
+                    <img src="./images/feature-icon-04.png">
+                    <h1>어디서나, 어떤 작업이든</h1>
+                    <p>
+                        Chrome은 모든 운영체제에서, 어떤 기기에서나 작동합니다. 노트북과 휴대전화를 마음대로 오가고 원하는 대로 맞춤설정하며 더 많은 작업을 할 수 있습니다.
+                    </p>
+                    <a href="#" class="read-more">살펴보기</a>
+                </div>
+            </div>
+        </section>
+        <section class="callaction"></section>
+        <footer></footer>
+    </div>
+</body>
+
+<!-- 
+    ■ 모바일 레이아웃 변경 시 기본원칙
+
+    1) style.css를 보면서 변경할 부분을 responsive.css에서 변경
+    2) float된 요소를 찾아서 float: none
+    3) float: none 된 요소 width: 100%
+    4) widht가 400픽셀 이상인 요소 찾아서 width: 100%
+    5) 경우에 따라 position: absolute 된 요소를 찾아서 position: static, transform: translate(0)
+    6) 경우에 따라 height: 100vh 또는 픽셀로 된 부분을 경우에 따라 height: auto
+    7) style.css 주석을 responsive.css에서도 충실하게 유지
+    8) 모바일에 맞게 폰트사이즈, 마진, 패딩, 크기 조정하기
+
+    ※ style.css에서 사용한 선택자 방식과 동일한 방식으로 responsive.css에서도 사용해야 함.
+
+    ex) .inner > div {...}  .desc {...}   .photo {...}
+ -->
+</html>

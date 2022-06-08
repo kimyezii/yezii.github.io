@@ -1,0 +1,184 @@
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    font-size: 16px;
+    color: #3c4043;
+    line-height: 1.6em;
+}
+a {
+    text-decoration: none;
+    color: #3c4043;
+}
+
+/* reset css */
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    font-weight: 500;
+}
+
+/* common css */
+.btn-download {
+    background-color: dodgerblue;
+    color: #fff;
+    display: inline-block;
+    width: 180px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 2px;
+}
+.btn-download:hover {
+    background-color: #174ea6;
+}
+section.feature {
+    padding: 100px 0;
+}
+.inner {
+    /* border: 1px solid #000; */
+    width: 1250px;
+    margin: auto;
+    overflow: hidden;
+
+    /* display: flex;
+    align-items: center; */
+}
+.inner > div {
+    float: left;
+    width: 50%;
+
+    /* flex: 1; */
+}
+.desc {
+    padding: 0 50px;
+    padding-top: 100px;
+}
+.desc img {}
+.desc h1 {
+    font-size: 42px;
+    line-height: 1.2em;
+}
+.photo img {
+    width: 100%;
+}
+.read-more {
+    color: purple;
+}
+.read-more::after {
+    content: '\e907';
+    font-family: xeicon;
+    margin-left: 5px;
+    display: inline-block;
+    transition: 0.35s;
+}
+.read-more:hover::after {
+    transform: translateX(5px);
+    /* transform은 inline요소에 적용되지 않음 */
+}
+
+/* header */
+header {
+    height: 65px;
+    background-color: #fff;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    padding: 0 20px;
+}
+.logo {
+    float: left;
+    padding-top: 16px;
+}
+.download {
+    float: right;
+    padding-top: 10px;
+}
+
+/* section : welcome */
+section.welcome {
+    border: 1px solid #000;
+    height: 100vh;
+    background: #f8f9fb url(../images/hero-back-large-desktop.jpg) no-repeat center center;
+    position: relative;
+}
+.heading {
+    /* border: 1px solid #000; */
+    position: absolute;
+    width: 630px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.heading img {
+    width: 65px;
+}
+.heading h1 {
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 1.3em;
+    margin: 30px 0;
+}
+.download-content {}
+.download-content span {
+    display: block;
+    font-size: 13px;
+}
+.statics {
+    font-size: 13px;
+}
+.statics a {
+    color: dodgerblue;
+}
+.statics a:hover {
+    color: rgb(69, 114, 160);
+}
+.statics label input[type=checkbox] {
+    /* vertical-align: middle;
+    margin-top: -1px; */
+    transform: translateY(1px);
+
+}
+
+.next-section {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.next-section a {
+    /* border: 1px solid #000; */
+    width: 60px;
+    height: 60px;
+    display: block;
+    border-radius: 50px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    line-height: 65px;
+    font-size: 36px;
+}
+.next-section a i {
+    animation: next 1.2s linear infinite;
+}
+
+@keyframes next {
+    0% {
+        transform: translateY(-3px);
+    }
+    50% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(-3px);
+    }
+}
